@@ -39,6 +39,8 @@
 		24759B5B25E37BC600AA6BA5 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24759B5A25E37BC600AA6BA5 /* VideoListItemView.swift */; };
 		24759B5F25E3892600AA6BA5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24759B5E25E3892600AA6BA5 /* VideoPlayerView.swift */; };
 		24759B6325E38B8900AA6BA5 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24759B6225E38B8900AA6BA5 /* VideoPlayerHelper.swift */; };
+		24759B6725E3984C00AA6BA5 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24759B6625E3984C00AA6BA5 /* LocationModel.swift */; };
+		24759B6B25E39DE700AA6BA5 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24759B6A25E39DE700AA6BA5 /* MapAnnotationView.swift */; };
 		247FCEE325D50D500017DA6C /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FCEE225D50D500017DA6C /* AnimalListItemView.swift */; };
 		247FCEE625D512B40017DA6C /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FCEE525D512B40017DA6C /* AnimalModel.swift */; };
 		247FCEE925D8D42B0017DA6C /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FCEE825D8D42B0017DA6C /* AnimalDetailView.swift */; };
@@ -81,6 +83,8 @@
 		24759B5A25E37BC600AA6BA5 /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		24759B5E25E3892600AA6BA5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		24759B6225E38B8900AA6BA5 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
+		24759B6625E3984C00AA6BA5 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		24759B6A25E39DE700AA6BA5 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		247FCEE225D50D500017DA6C /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 		247FCEE525D512B40017DA6C /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		247FCEE825D8D42B0017DA6C /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
@@ -118,16 +122,16 @@
 		245587EF25D2668200A4540C /* Animals wiki */ = {
 			isa = PBXGroup;
 			children = (
-				24759B6125E38B6D00AA6BA5 /* Helper */,
-				2455883625D27B6D00A4540C /* Extension */,
-				2455882F25D2737300A4540C /* Model */,
-				2455882E25D2736E00A4540C /* View */,
-				2455881625D26A1200A4540C /* Data */,
-				2455880025D2695500A4540C /* Video */,
 				2455882025D26CE000A4540C /* App */,
 				245587F425D2668600A4540C /* Assets.xcassets */,
+				2455881625D26A1200A4540C /* Data */,
+				2455883625D27B6D00A4540C /* Extension */,
+				24759B6125E38B6D00AA6BA5 /* Helper */,
 				245587F925D2668600A4540C /* Info.plist */,
+				2455882F25D2737300A4540C /* Model */,
 				245587F625D2668600A4540C /* Preview Content */,
+				2455880025D2695500A4540C /* Video */,
+				2455882E25D2736E00A4540C /* View */,
 			);
 			path = "Animals wiki";
 			sourceTree = "<group>";
@@ -194,6 +198,7 @@
 				24759B5425E3760700AA6BA5 /* ExternalWebLinkView.swift */,
 				24759B5A25E37BC600AA6BA5 /* VideoListItemView.swift */,
 				24759B5E25E3892600AA6BA5 /* VideoPlayerView.swift */,
+				24759B6A25E39DE700AA6BA5 /* MapAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				2455883325D2785500A4540C /* CoverImageModel.swift */,
 				247FCEE525D512B40017DA6C /* AnimalModel.swift */,
 				24759B5725E37AEA00AA6BA5 /* VideoModel.swift */,
+				24759B6625E3984C00AA6BA5 /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,9 +326,11 @@
 				24759B6325E38B8900AA6BA5 /* VideoPlayerHelper.swift in Sources */,
 				245587F125D2668200A4540C /* Animals_wikiApp.swift in Sources */,
 				24759B5525E3760700AA6BA5 /* ExternalWebLinkView.swift in Sources */,
+				24759B6B25E39DE700AA6BA5 /* MapAnnotationView.swift in Sources */,
 				2455882325D26DA200A4540C /* VideoListView.swift in Sources */,
 				24759B5825E37AEA00AA6BA5 /* VideoModel.swift in Sources */,
 				2455882925D26DCE00A4540C /* GalleryView.swift in Sources */,
+				24759B6725E3984C00AA6BA5 /* LocationModel.swift in Sources */,
 				247FCEEF25D92E400017DA6C /* InsetGalleryView.swift in Sources */,
 				24759B5B25E37BC600AA6BA5 /* VideoListItemView.swift in Sources */,
 				2455883825D27B7E00A4540C /* CodableBundleExtension.swift in Sources */,

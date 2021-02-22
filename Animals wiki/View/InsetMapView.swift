@@ -37,6 +37,7 @@ struct InsetMapView: View {
                 .padding(12)
                 , alignment: .topTrailing
             )
+            
             .frame(height:256)
             .cornerRadius(12)
     }
