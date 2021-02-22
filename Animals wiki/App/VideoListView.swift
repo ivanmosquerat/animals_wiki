@@ -18,8 +18,12 @@ struct VideoListView: View {
         NavigationView{
             List{
                 ForEach(videos){ video in
-                    VideoListItemView(video: video)
-                        .padding(.vertical, 8)
+                    
+                    NavigationLink(destination: VideoPlayerView(videoSelected: video.id, videoTitle: video.name)) {
+                        
+                        VideoListItemView(video: video)
+                            .padding(.vertical, 8)
+                    }
                 }
             }//: List
             .listStyle(InsetGroupedListStyle())
@@ -29,7 +33,7 @@ struct VideoListView: View {
                     
                     Button(action: {
                         videos.shuffle()
-                        hapticImpact.impactOccurred()
+                        hapticImpact.impactOccurred() 
                     }){
                         Image(systemName: "arrow.2.squarepath")
                     }
