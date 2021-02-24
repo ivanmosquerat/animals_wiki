@@ -50,8 +50,10 @@ struct ContentView: View {
                             
                             NavigationLink(destination: AnimalDetailView(animal: animal)) {
                                 AnimalListItemView(animal: animal)
-                            }
-                        }
+                            }//: link
+                        }//: Loop
+                        CreditsView()
+                            .modifier(CenterModifier())
                     }//: List
                     
                 } else {
@@ -65,6 +67,7 @@ struct ContentView: View {
                                 }//: Link
                             }//: Loop
                         }//: Grid
+                        
                         .padding(10)
                         .animation(.easeIn)
                     }//: Scroll

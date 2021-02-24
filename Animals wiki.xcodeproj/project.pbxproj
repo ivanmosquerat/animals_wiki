@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,7 +49,9 @@
 		247FCEEF25D92E400017DA6C /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FCEEE25D92E400017DA6C /* InsetGalleryView.swift */; };
 		248E331325E626DB001FDC19 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E331225E626DB001FDC19 /* AnimalGridItemView.swift */; };
 		248E331A25E6355B001FDC19 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248E331925E6355B001FDC19 /* Stickers.xcassets */; };
-		248E331E25E6355B001FDC19 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 248E331725E63558001FDC19 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		248E331E25E6355B001FDC19 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 248E331725E63558001FDC19 /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		248E332825E64F95001FDC19 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E332725E64F95001FDC19 /* CreditsView.swift */; };
+		248E332D25E654D1001FDC19 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E332C25E654D1001FDC19 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,9 @@
 		248E331725E63558001FDC19 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		248E331925E6355B001FDC19 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		248E331B25E6355B001FDC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248E332725E64F95001FDC19 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		248E332C25E654D1001FDC19 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		248E333425E65726001FDC19 /* Animals wiki.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Animals wiki.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +162,8 @@
 		245587EF25D2668200A4540C /* Animals wiki */ = {
 			isa = PBXGroup;
 			children = (
+				248E333425E65726001FDC19 /* Animals wiki.entitlements */,
+				248E332B25E654BB001FDC19 /* Modifier */,
 				2455882025D26CE000A4540C /* App */,
 				245587F425D2668600A4540C /* Assets.xcassets */,
 				2455881625D26A1200A4540C /* Data */,
@@ -236,6 +243,7 @@
 				24759B6A25E39DE700AA6BA5 /* MapAnnotationView.swift */,
 				24759B6D25E3A9D200AA6BA5 /* MotionAnimationView.swift */,
 				248E331225E626DB001FDC19 /* AnimalGridItemView.swift */,
+				248E332725E64F95001FDC19 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +282,14 @@
 				248E331B25E6355B001FDC19 /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		248E332B25E654BB001FDC19 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				248E332C25E654D1001FDC19 /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,8 +425,10 @@
 				248E331325E626DB001FDC19 /* AnimalGridItemView.swift in Sources */,
 				247FCEEF25D92E400017DA6C /* InsetGalleryView.swift in Sources */,
 				24759B5B25E37BC600AA6BA5 /* VideoListItemView.swift in Sources */,
+				248E332825E64F95001FDC19 /* CreditsView.swift in Sources */,
 				2455883825D27B7E00A4540C /* CodableBundleExtension.swift in Sources */,
 				24759B6E25E3A9D200AA6BA5 /* MotionAnimationView.swift in Sources */,
+				248E332D25E654D1001FDC19 /* CenterModifier.swift in Sources */,
 				247FCEEC25D8E2EA0017DA6C /* HeadingView.swift in Sources */,
 				24759B5F25E3892600AA6BA5 /* VideoPlayerView.swift in Sources */,
 			);
@@ -421,6 +439,7 @@
 /* Begin PBXTargetDependency section */
 		248E331D25E6355B001FDC19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 248E331625E63558001FDC19 /* Stickers */;
 			targetProxy = 248E331C25E6355B001FDC19 /* PBXContainerItemProxy */;
 		};
@@ -548,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Animals wiki/Animals wiki.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Animals wiki/Preview Content\"";
 				DEVELOPMENT_TEAM = 929LF3XGVG;
@@ -560,6 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idm.Animals-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -570,6 +591,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Animals wiki/Animals wiki.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Animals wiki/Preview Content\"";
 				DEVELOPMENT_TEAM = 929LF3XGVG;
@@ -582,6 +604,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idm.Animals-wiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -598,6 +621,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idm.Animals-wiki.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -613,6 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idm.Animals-wiki.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
