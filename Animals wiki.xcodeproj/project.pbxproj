@@ -48,7 +48,33 @@
 		247FCEEC25D8E2EA0017DA6C /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FCEEB25D8E2E90017DA6C /* HeadingView.swift */; };
 		247FCEEF25D92E400017DA6C /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FCEEE25D92E400017DA6C /* InsetGalleryView.swift */; };
 		248E331325E626DB001FDC19 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E331225E626DB001FDC19 /* AnimalGridItemView.swift */; };
+		248E331A25E6355B001FDC19 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248E331925E6355B001FDC19 /* Stickers.xcassets */; };
+		248E331E25E6355B001FDC19 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 248E331725E63558001FDC19 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		248E331C25E6355B001FDC19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 245587E525D2668200A4540C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248E331625E63558001FDC19;
+			remoteInfo = Stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		248E332225E6355B001FDC19 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				248E331E25E6355B001FDC19 /* Stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		245587ED25D2668200A4540C /* Animals wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animals wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +120,9 @@
 		247FCEEB25D8E2E90017DA6C /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		247FCEEE25D92E400017DA6C /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		248E331225E626DB001FDC19 /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
+		248E331725E63558001FDC19 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		248E331925E6355B001FDC19 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		248E331B25E6355B001FDC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				245587EF25D2668200A4540C /* Animals wiki */,
+				248E331825E63558001FDC19 /* Stickers */,
 				245587EE25D2668200A4540C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				245587ED25D2668200A4540C /* Animals wiki.app */,
+				248E331725E63558001FDC19 /* Stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +267,15 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		248E331825E63558001FDC19 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				248E331925E6355B001FDC19 /* Stickers.xcassets */,
+				248E331B25E6355B001FDC19 /* Info.plist */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,15 +286,32 @@
 				245587E925D2668200A4540C /* Sources */,
 				245587EA25D2668200A4540C /* Frameworks */,
 				245587EB25D2668200A4540C /* Resources */,
+				248E332225E6355B001FDC19 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				248E331D25E6355B001FDC19 /* PBXTargetDependency */,
 			);
 			name = "Animals wiki";
 			productName = "Animals wiki";
 			productReference = 245587ED25D2668200A4540C /* Animals wiki.app */;
 			productType = "com.apple.product-type.application";
+		};
+		248E331625E63558001FDC19 /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248E331F25E6355B001FDC19 /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				248E331525E63558001FDC19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = 248E331725E63558001FDC19 /* Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
 		};
 /* End PBXNativeTarget section */
 
@@ -266,6 +323,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					245587EC25D2668200A4540C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					248E331625E63558001FDC19 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -284,6 +344,7 @@
 			projectRoot = "";
 			targets = (
 				245587EC25D2668200A4540C /* Animals wiki */,
+				248E331625E63558001FDC19 /* Stickers */,
 			);
 		};
 /* End PBXProject section */
@@ -309,6 +370,14 @@
 				2455881325D2698100A4540C /* lion.mp4 in Resources */,
 				245587F525D2668600A4540C /* Assets.xcassets in Resources */,
 				2455880F25D2698100A4540C /* cheetah.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248E331525E63558001FDC19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248E331A25E6355B001FDC19 /* Stickers.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +417,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		248E331D25E6355B001FDC19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248E331625E63558001FDC19 /* Stickers */;
+			targetProxy = 248E331C25E6355B001FDC19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		245587FA25D2668600A4540C /* Debug */ = {
@@ -510,6 +587,36 @@
 			};
 			name = Release;
 		};
+		248E332025E6355B001FDC19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 929LF3XGVG;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.idm.Animals-wiki.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		248E332125E6355B001FDC19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 929LF3XGVG;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.idm.Animals-wiki.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -527,6 +634,15 @@
 			buildConfigurations = (
 				245587FD25D2668600A4540C /* Debug */,
 				245587FE25D2668600A4540C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248E331F25E6355B001FDC19 /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248E332025E6355B001FDC19 /* Debug */,
+				248E332125E6355B001FDC19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
